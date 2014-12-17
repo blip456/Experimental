@@ -54,7 +54,7 @@ void loop() {
        y = (message.substring(pointIndex+1, kickIndex)).toInt();
        kick = message.substring(kickIndex+1);
        //Serial.println(x + " YOLO " + y); 
-       //Serial.println("x: " + x + " - " + "y: " + y + "KICK = " + kick);
+       Serial.println("x: " + x + " - " + "y: " + y + "KICK = " + kick);
        Serial.println(message);     
        message = "";
      }
