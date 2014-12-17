@@ -16,6 +16,7 @@ String message;
 int pointIndex;
 int kickIndex;
 int x,y;
+String kick;
 
 void setup() {
   Serial.begin(9600);
@@ -48,9 +49,12 @@ void loop() {
      else 
      {
        pointIndex = message.indexOf(':');
+       kickIndex = message.indexOf(';', pointIndex+1);
        x = (message.substring(0, pointIndex)).toInt();
-       y = (message.substring(pointIndex+1)).toInt();
+       y = (message.substring(pointIndex+1, kickIndex)).toInt();
+       kick = message.substring(kickIndex+1);
        //Serial.println(x + " YOLO " + y); 
+       //Serial.println("x: " + x + " - " + "y: " + y + "KICK = " + kick);
        Serial.println(message);     
        message = "";
      }
