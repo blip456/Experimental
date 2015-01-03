@@ -1,9 +1,9 @@
-// NRF      ARDUINO    COLOR
+// NRF      ARDUINO    COLOR		MEGA
 // 1 GND    GND        black
 // 2 VCC    3.3V       red
 // 3 CE     8 out      orange
 // 4 CSN    7 out      blue
-// 5 SCK    13 out     green
-// 6 MOSI   11 out     yellow
-// 7 MISO   12 in      special
+// 5 SCK    13 out     green		52
+// 6 MOSI   11 out     yellow		51
+// 7 MISO   12 in      special		50
 // 8 IRQ    2 in       white
